@@ -1,0 +1,5 @@
+{
+  "REDIR_PORT": "2080",
+  "REDIR_URI": "/web2/display",
+  "LISTEN_PORT": 8082
+}
