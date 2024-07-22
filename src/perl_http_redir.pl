@@ -100,16 +100,16 @@ sub handle_request {
 # start the server on port 
 my $pid = PerlWebServer->new($LISTEN_PORT + 0)->background();
 
-open(FH, '>', $PID_FILENAME) or die $!;
-print FH "$pid\n";
-close(FH);
-
-print "# wrote PID ($pid) to file: $PID_FILENAME \n";
-print "# test using: \n";
-print "# > curl -v -s -o - http://127.0.0.1:$LISTEN_PORT/ \n";
-print "# kill using: \n";
-print "# > kill $pid \n";
-print "# > pkill -F $PID_FILENAME \n";
+# open(FH, '>', $PID_FILENAME) or die $!;
+# print FH "$pid\n";
+# close(FH);
+# #
+# print "# wrote PID ($pid) to file: $PID_FILENAME \n";
+# print "# test using: \n";
+# print "# > curl -v -s -o - http://127.0.0.1:$LISTEN_PORT/ \n";
+# print "# kill using: \n";
+# print "# > kill $pid \n";
+# print "# > pkill -F $PID_FILENAME \n";
 
 
 # print STDOUT "$pid\n";
